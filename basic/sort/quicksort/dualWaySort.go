@@ -5,21 +5,21 @@ import (
 	"time"
 )
 
-func DualPivotQuickSort(arr []int) {
-	dualPivotSort(arr, 0, len(arr)-1)
+func DualWayQuickSort(arr []int) {
+	dualWaySort(arr, 0, len(arr)-1)
 }
 
-func dualPivotSort(arr []int, l, r int) {
+func dualWaySort(arr []int, l, r int) {
 	if l >= r {
 		return
 	}
 
-	p := dualPivotPartition(arr, l, r)
-	dualPivotSort(arr, l, p-1)
-	dualPivotSort(arr, p+1, r)
+	p := dualWayPartition(arr, l, r)
+	dualWaySort(arr, l, p-1)
+	dualWaySort(arr, p+1, r)
 }
 
-func dualPivotPartition(arr []int, l, r int) int {
+func dualWayPartition(arr []int, l, r int) int {
 	rand.Seed(time.Now().UnixNano())
 	randomIndex := rand.Intn(r-l+1) + l
 	arr[l], arr[randomIndex] = arr[randomIndex], arr[l]

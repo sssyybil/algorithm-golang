@@ -19,7 +19,7 @@ func quickSort(arr []int, l, r int) {
 		insertsort.SortWithCopy(arr, l, r)
 	}
 
-	p := dualPivotPartition(arr, l, r)
+	p := partition(arr, l, r)
 	quickSort(arr, l, p-1)
 	quickSort(arr, p+1, r)
 }
