@@ -44,6 +44,7 @@ func threeWaySort(arr []int, l, r int) {
 	}
 	arr[l], arr[lt] = arr[lt], arr[l]
 
+	// 第一遍排序结束后，lt 处于 == v 部分的第一个元素，gt 处于 > v 部分的第一个元素
 	threeWaySort(arr, l, lt-1)
 	threeWaySort(arr, gt, r)
 }
