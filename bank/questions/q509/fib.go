@@ -33,16 +33,16 @@ func fibWithRecurBetter(n int) int {
 
 // fib 使用【自下而上】的解决方式，即先从最小的单位开始求解。通常这个过程被称为【动态规划】。时间复杂度为 O(n)
 func fib(n int) int {
-	// 此处声明 memory 数组的容量为 31，是因为题目中给出了 n 的范围是 0 <= n <= 30
-	var memory = make([]int, 31)
-	memory[0] = 0
-	memory[1] = 1
+	// 此处声明 memo 数组的容量为 31，是因为题目中给出了 n 的范围是 0 <= n <= 30
+	var memo = make([]int, 31)
+	memo[0] = 0
+	memo[1] = 1
 
 	if n == 0 || n == 1 {
-		return memory[n]
+		return memo[n]
 	}
 	for i := 2; i <= n; i++ {
-		memory[i] = memory[i-1] + memory[i-2]
+		memo[i] = memo[i-1] + memo[i-2]
 	}
-	return memory[n]
+	return memo[n]
 }

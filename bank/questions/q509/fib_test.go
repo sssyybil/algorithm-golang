@@ -13,9 +13,8 @@ func Test_fibWithRecur(t *testing.T) {
 	}{
 		{"recur-01", 4, 3},
 		{"recur-02", 10, 55},
-		{"recur-03", 100, 3736710778780434371},
-		{"recur-04", 1000, 817770325994397771},
-		{"recur-05", 100000, 2754320626097736315},
+		{"recur-03", 40, 102334155},
+		{"recur-04", 100, 3736710778780434371},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -1,5 +1,9 @@
 package main
 
+/**
+ * 【剑指 Offer 50. 第一个只出现一次的字符】🐱https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/?favorite=xb9nqhhg
+ */
+
 func firstUniqChar_A(s string) byte {
 	tmp := make(map[rune]int)
 	for _, r := range []rune(s) {
