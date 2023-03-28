@@ -2,7 +2,6 @@ package main
 
 import (
 	"algorithm-golang/types"
-	"algorithm-golang/utils"
 )
 
 /**
@@ -25,10 +24,4 @@ func reverseList(head *types.ListNode) *types.ListNode {
 		cur = next
 	}
 	return pre
-}
-
-func main() {
-	listNode := utils.CreateLinkedList([]int{1, 2, 3, 4, 5})
-	ans := reverseList(listNode)
-	utils.PrintLinkedList(ans)
 }

@@ -57,9 +57,9 @@ func oddEvenListB(head *types.ListNode) *types.ListNode {
 }
 
 func main() {
-	utils.PrintLinkedList(oddEvenListA(utils.CreateLinkedList([]int{1, 2, 3, 4, 5})))       // 1,3,5,2,4
-	utils.PrintLinkedList(oddEvenListA(utils.CreateLinkedList([]int{2, 1, 3, 5, 6, 4, 7}))) // 2,3,6,7,1,5,4
+	utils.PrintLinkedList(oddEvenListA(utils.GenerateLinkedList([]int{1, 2, 3, 4, 5})))       // 1,3,5,2,4
+	utils.PrintLinkedList(oddEvenListA(utils.GenerateLinkedList([]int{2, 1, 3, 5, 6, 4, 7}))) // 2,3,6,7,1,5,4
 	fmt.Println()
-	utils.PrintLinkedList(oddEvenListB(utils.CreateLinkedList([]int{1, 2, 3, 4, 5})))       // 1,3,5,2,4
-	utils.PrintLinkedList(oddEvenListB(utils.CreateLinkedList([]int{2, 1, 3, 5, 6, 4, 7}))) // 2,3,6,7,1,5,4
+	utils.PrintLinkedList(oddEvenListB(utils.GenerateLinkedList([]int{1, 2, 3, 4, 5})))       // 1,3,5,2,4
+	utils.PrintLinkedList(oddEvenListB(utils.GenerateLinkedList([]int{2, 1, 3, 5, 6, 4, 7}))) // 2,3,6,7,1,5,4
 }

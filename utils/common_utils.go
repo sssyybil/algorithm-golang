@@ -75,3 +75,13 @@ func IsMatrixEqual(matrix1, matrix2 [][]int) bool {
 	}
 	return true
 }
+
+// IsPerfectSquare 判断 n 是否是完全平方数
+func IsPerfectSquare(num int) bool {
+	i := 1
+	for num > 0 {
+		num -= i
+		i += 2
+	}
+	return num == 0
+}

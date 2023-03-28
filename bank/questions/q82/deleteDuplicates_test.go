@@ -16,11 +16,11 @@ func Test_deleteDuplicates(t *testing.T) {
 		want *types.ListNode
 	}{
 		// TODO: Add test cases.
-		{"1", args{head: utils.CreateLinkedList([]int{1, 1, 1, 2, 3})}, utils.CreateLinkedList([]int{2, 3})},
-		{"2", args{head: utils.CreateLinkedList([]int{1, 2, 3, 3, 4, 5})}, utils.CreateLinkedList([]int{1, 2, 4, 5})},
-		{"3", args{head: utils.CreateLinkedList([]int{2, 3, 4, 4, 4})}, utils.CreateLinkedList([]int{2, 3})},
-		{"4", args{head: utils.CreateLinkedList([]int{3, 4, 5, 6, 7})}, utils.CreateLinkedList([]int{3, 4, 5, 6, 7})},
-		{"5", args{head: utils.CreateLinkedList([]int{1, 2, 3, 3, 4, 4, 5})}, utils.CreateLinkedList([]int{1, 2, 5})},
+		{"1", args{head: utils.GenerateLinkedList([]int{1, 1, 1, 2, 3})}, utils.GenerateLinkedList([]int{2, 3})},
+		{"2", args{head: utils.GenerateLinkedList([]int{1, 2, 3, 3, 4, 5})}, utils.GenerateLinkedList([]int{1, 2, 4, 5})},
+		{"3", args{head: utils.GenerateLinkedList([]int{2, 3, 4, 4, 4})}, utils.GenerateLinkedList([]int{2, 3})},
+		{"4", args{head: utils.GenerateLinkedList([]int{3, 4, 5, 6, 7})}, utils.GenerateLinkedList([]int{3, 4, 5, 6, 7})},
+		{"5", args{head: utils.GenerateLinkedList([]int{1, 2, 3, 3, 4, 4, 5})}, utils.GenerateLinkedList([]int{1, 2, 5})},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

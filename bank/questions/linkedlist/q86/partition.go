@@ -62,11 +62,11 @@ func partitionB(head *types.ListNode, x int) *types.ListNode {
 }
 
 func main() {
-	utils.PrintLinkedList(partitionA(utils.CreateLinkedList([]int{1, 4, 3, 2, 5, 2}), 3)) // 1,2,2,4,3,5
-	utils.PrintLinkedList(partitionA(utils.CreateLinkedList([]int{2, 1}), 2))             // 1,2
+	utils.PrintLinkedList(partitionA(utils.GenerateLinkedList([]int{1, 4, 3, 2, 5, 2}), 3)) // 1,2,2,4,3,5
+	utils.PrintLinkedList(partitionA(utils.GenerateLinkedList([]int{2, 1}), 2))             // 1,2
 
 	fmt.Printf("-------------->\n")
 
-	utils.PrintLinkedList(partitionB(utils.CreateLinkedList([]int{1, 4, 3, 2, 5, 2}), 3)) // 1,2,2,4,3,5
-	utils.PrintLinkedList(partitionB(utils.CreateLinkedList([]int{2, 1}), 2))             // 1,2
+	utils.PrintLinkedList(partitionB(utils.GenerateLinkedList([]int{1, 4, 3, 2, 5, 2}), 3)) // 1,2,2,4,3,5
+	utils.PrintLinkedList(partitionB(utils.GenerateLinkedList([]int{2, 1}), 2))             // 1,2
 }

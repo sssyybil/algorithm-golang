@@ -86,8 +86,8 @@ func reverseBetweenB(head *types.ListNode, left, right int) *types.ListNode {
 }
 
 func main() {
-	case1 := utils.CreateLinkedList([]int{1, 2, 3, 4, 5})
-	case2 := utils.CreateLinkedList([]int{5})
+	case1 := utils.GenerateLinkedList([]int{1, 2, 3, 4, 5})
+	case2 := utils.GenerateLinkedList([]int{5})
 
 	//utils.PrintLinkedList(reverseBetweenA(case1, 2, 4))
 

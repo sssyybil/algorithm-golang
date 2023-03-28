@@ -17,11 +17,11 @@ func Test_removeElements(t *testing.T) {
 		want *types.ListNode
 	}{
 		// TODO: Add test cases.
-		{"removeElements", args{utils.CreateLinkedList([]int{1, 2, 6, 3, 4, 5, 6}), 6}, utils.CreateLinkedList([]int{1, 2, 3, 4, 5})},
-		{"removeElements", args{utils.CreateLinkedList([]int{1, 1, 1, 2, 2, 4, 5, 6}), 1}, utils.CreateLinkedList([]int{2, 2, 4, 5, 6})},
-		{"removeElements", args{utils.CreateLinkedList([]int{3, 3, 3, 3}), 1}, utils.CreateLinkedList([]int{3, 3, 3, 3})},
-		{"removeElements", args{utils.CreateLinkedList([]int{3, 3, 3, 3}), 3}, utils.CreateLinkedList([]int{})},
-		{"removeElements", args{utils.CreateLinkedList([]int{}), 1}, utils.CreateLinkedList([]int{})},
+		{"removeElements", args{utils.GenerateLinkedList([]int{1, 2, 6, 3, 4, 5, 6}), 6}, utils.GenerateLinkedList([]int{1, 2, 3, 4, 5})},
+		{"removeElements", args{utils.GenerateLinkedList([]int{1, 1, 1, 2, 2, 4, 5, 6}), 1}, utils.GenerateLinkedList([]int{2, 2, 4, 5, 6})},
+		{"removeElements", args{utils.GenerateLinkedList([]int{3, 3, 3, 3}), 1}, utils.GenerateLinkedList([]int{3, 3, 3, 3})},
+		{"removeElements", args{utils.GenerateLinkedList([]int{3, 3, 3, 3}), 3}, utils.GenerateLinkedList([]int{})},
+		{"removeElements", args{utils.GenerateLinkedList([]int{}), 1}, utils.GenerateLinkedList([]int{})},
 	}
 
 	for _, tt := range tests {

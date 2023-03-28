@@ -25,7 +25,7 @@ func removeDuplicateNodes(head *types.ListNode) *types.ListNode {
 }
 
 func main() {
-	linkedList := utils.CreateLinkedList([]int{1, 1, 1, 1, 2})
+	linkedList := utils.GenerateLinkedList([]int{1, 1, 1, 1, 2})
 	res := removeDuplicateNodes(linkedList)
 	utils.PrintLinkedList(res)
 }

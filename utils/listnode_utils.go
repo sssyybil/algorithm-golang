@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-// CreateLinkedList ==> 创建单链表
-func CreateLinkedList(nums []int) *types.ListNode {
+// GenerateLinkedList ==> 根据给定数组生成单链表
+func GenerateLinkedList(nums []int) *types.ListNode {
 	if nums == nil || len(nums) == 0 {
 		return nil
 	}
@@ -16,6 +16,21 @@ func CreateLinkedList(nums []int) *types.ListNode {
 		p.Next = &types.ListNode{Val: v}
 		p = p.Next
 	}
+	return dummyHead.Next
+}
+
+// GenerateCycleLinkedList 根据给定数组生成循环单链表
+func GenerateCycleLinkedList(nums []int) *types.ListNode {
+	if nums == nil || len(nums) == 0 {
+		return nil
+	}
+	dummyHead := &types.ListNode{}
+	p := dummyHead
+	for _, v := range nums {
+		p.Next = &types.ListNode{Val: v}
+		p = p.Next
+	}
+	p.Next = dummyHead.Next
 	return dummyHead.Next
 }
 

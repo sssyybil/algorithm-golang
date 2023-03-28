@@ -44,15 +44,15 @@ func deleteDuplicatesB(head *types.ListNode) *types.ListNode {
 }
 
 func main() {
-	utils.PrintLinkedList(deleteDuplicatesA(utils.CreateLinkedList([]int{1, 1, 1})))                   // 1
-	utils.PrintLinkedList(deleteDuplicatesA(utils.CreateLinkedList([]int{2, 2, 2, 2, 2, 3, 3, 3, 3}))) // 2,3
-	utils.PrintLinkedList(deleteDuplicatesA(utils.CreateLinkedList([]int{1, 1, 2, 3, 3, 4, 5})))       // 1,2,3,4,5
-	utils.PrintLinkedList(deleteDuplicatesA(utils.CreateLinkedList([]int{1, 1, 2})))                   // 1,2
-	utils.PrintLinkedList(deleteDuplicatesA(utils.CreateLinkedList([]int{1, 1, 2, 3, 3})))             // 1,2,3
+	utils.PrintLinkedList(deleteDuplicatesA(utils.GenerateLinkedList([]int{1, 1, 1})))                   // 1
+	utils.PrintLinkedList(deleteDuplicatesA(utils.GenerateLinkedList([]int{2, 2, 2, 2, 2, 3, 3, 3, 3}))) // 2,3
+	utils.PrintLinkedList(deleteDuplicatesA(utils.GenerateLinkedList([]int{1, 1, 2, 3, 3, 4, 5})))       // 1,2,3,4,5
+	utils.PrintLinkedList(deleteDuplicatesA(utils.GenerateLinkedList([]int{1, 1, 2})))                   // 1,2
+	utils.PrintLinkedList(deleteDuplicatesA(utils.GenerateLinkedList([]int{1, 1, 2, 3, 3})))             // 1,2,3
 	fmt.Println("------")
-	utils.PrintLinkedList(deleteDuplicatesB(utils.CreateLinkedList([]int{1, 1, 1})))                   // 1
-	utils.PrintLinkedList(deleteDuplicatesB(utils.CreateLinkedList([]int{2, 2, 2, 2, 2, 3, 3, 3, 3}))) // 2,3
-	utils.PrintLinkedList(deleteDuplicatesB(utils.CreateLinkedList([]int{1, 1, 2, 3, 3, 4, 5})))       // 1,2,3,4,5
-	utils.PrintLinkedList(deleteDuplicatesB(utils.CreateLinkedList([]int{1, 1, 2})))                   // 1,2
-	utils.PrintLinkedList(deleteDuplicatesB(utils.CreateLinkedList([]int{1, 1, 2, 3, 3})))             // 1,2,3
+	utils.PrintLinkedList(deleteDuplicatesB(utils.GenerateLinkedList([]int{1, 1, 1})))                   // 1
+	utils.PrintLinkedList(deleteDuplicatesB(utils.GenerateLinkedList([]int{2, 2, 2, 2, 2, 3, 3, 3, 3}))) // 2,3
+	utils.PrintLinkedList(deleteDuplicatesB(utils.GenerateLinkedList([]int{1, 1, 2, 3, 3, 4, 5})))       // 1,2,3,4,5
+	utils.PrintLinkedList(deleteDuplicatesB(utils.GenerateLinkedList([]int{1, 1, 2})))                   // 1,2
+	utils.PrintLinkedList(deleteDuplicatesB(utils.GenerateLinkedList([]int{1, 1, 2, 3, 3})))             // 1,2,3
 }

@@ -8,12 +8,13 @@
 
 ### 🍊 动态规划
 
-| 题目                                                                      | 难度                                    | 题解  |
-|-------------------------------------------------------------------------|---------------------------------------|-----|
-| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)            | <span style="color:green">简单</span>   |     |
-| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)                | <span style="color:green">简单</span>   |     |
-| [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/)                 | <span style="color:#E18A2F">中等</span> |     |
-| [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/description/) | <span style="color:#E18A2F">中等</span> |     |
+| 题目                                                                      | 难度                                    | 题解                                                                                 |
+|-------------------------------------------------------------------------|---------------------------------------|------------------------------------------------------------------------------------|
+| [509. 斐波那契数](https://leetcode.cn/problems/fibonacci-number/)            | <span style="color:green">简单</span>   | [q509](https://github.com/sssyybil/algorithm-golang/tree/main/bank/questions/q509) |
+| [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)                | <span style="color:green">简单</span>   | [q70](https://github.com/sssyybil/algorithm-golang/tree/main/bank/questions/q70)   |
+| [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/)                 | <span style="color:#E18A2F">中等</span> | [q120](https://github.com/sssyybil/algorithm-golang/tree/main/bank/questions/q120) |
+| [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/description/) | <span style="color:#E18A2F">中等</span> | [q64](https://github.com/sssyybil/algorithm-golang/tree/main/bank/questions/q64)   |
+| [343. 整数拆分](https://leetcode.cn/problems/integer-break/description/)    | <span style="color:#E18A2F">中等</span> | [q64](https://github.com/sssyybil/algorithm-golang/tree/main/bank/questions/q343)  |
 
 ### 🍊 递归
 

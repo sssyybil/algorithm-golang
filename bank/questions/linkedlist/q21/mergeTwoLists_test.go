@@ -17,10 +17,10 @@ func Test_mergeTwoLists(t *testing.T) {
 		want *types.ListNode
 	}{
 		// TODO: Add test cases.
-		{"1", args{list1: utils.CreateLinkedList([]int{1, 2, 4}), list2: utils.CreateLinkedList([]int{1, 3, 4})}, utils.CreateLinkedList([]int{1, 1, 2, 3, 4, 4})},
-		{"2", args{list1: utils.CreateLinkedList([]int{}), list2: utils.CreateLinkedList([]int{})}, utils.CreateLinkedList([]int{})},
-		{"3", args{list1: utils.CreateLinkedList([]int{1, 2, 3, 4, 5}), list2: utils.CreateLinkedList([]int{})}, utils.CreateLinkedList([]int{1, 2, 3, 4, 5})},
-		{"4", args{list1: utils.CreateLinkedList([]int{2, 2, 2}), list2: utils.CreateLinkedList([]int{3, 3, 3})}, utils.CreateLinkedList([]int{2, 2, 2, 3, 3, 3})},
+		{"1", args{list1: utils.GenerateLinkedList([]int{1, 2, 4}), list2: utils.GenerateLinkedList([]int{1, 3, 4})}, utils.GenerateLinkedList([]int{1, 1, 2, 3, 4, 4})},
+		{"2", args{list1: utils.GenerateLinkedList([]int{}), list2: utils.GenerateLinkedList([]int{})}, utils.GenerateLinkedList([]int{})},
+		{"3", args{list1: utils.GenerateLinkedList([]int{1, 2, 3, 4, 5}), list2: utils.GenerateLinkedList([]int{})}, utils.GenerateLinkedList([]int{1, 2, 3, 4, 5})},
+		{"4", args{list1: utils.GenerateLinkedList([]int{2, 2, 2}), list2: utils.GenerateLinkedList([]int{3, 3, 3})}, utils.GenerateLinkedList([]int{2, 2, 2, 3, 3, 3})},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
