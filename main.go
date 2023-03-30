@@ -29,10 +29,7 @@ func main() {
 	}
 	defer file.Close()
 
-	//data := "package main\n// " + time.Now().Format("2006-01-02 15:04")
-
 	data := fmt.Sprintf("package main\n /**\n * 【】\n * 🪢\n * @%s\n */", time.Now().Format("2006-01-02 15:04"))
-
 	_, err = file.Write([]byte(data))
 	if err != nil {
 		log.Fatalln(err)
